@@ -82,7 +82,7 @@ export default function Home() {
 					Estate - Mobile React Native Application
 				</h1>
 				<p className="text-gray-500 mt-3 text-xl">
-					Screen Gallery and Video Demo
+					Screen Gallery
 				</p>
 			</header>
 
