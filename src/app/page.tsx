@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 // import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -33,9 +34,9 @@ export default function Home() {
         <section className="w-full max-w-5xl text-center">
           <h2 className="text-2xl font-semibold mb-6">Screen Gallery</h2>
           <div className="flex items-center justify-center gap-4">
-            {/* <Button variant="outline" size="icon" onClick={() => scroll("left")} className="rounded-full shadow-sm">
+            <Button variant="outline" size="icon" onClick={() => scroll("left")} className="rounded-full shadow-sm">
               <ChevronLeft className="w-5 h-5" />
-            </Button> */}
+            </Button>
             <div
               ref={scrollRef}
               className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar w-full max-w-3xl px-2"
@@ -54,9 +55,9 @@ export default function Home() {
                 </Card>
               ))}
             </div>
-            {/* <Button variant="outline" size="icon" onClick={() => scroll("right")} className="rounded-full shadow-sm">
+            <Button variant="outline" size="icon" onClick={() => scroll("right")} className="rounded-full shadow-sm">
               <ChevronRight className="w-5 h-5" />
-            </Button> */}
+            </Button>
           </div>
         </section>
 
