@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* Style scrollbar*/
+	::-webkit-scrollbar {
+		width: 4px;
+		height: 2px;
+	}
+	::-webkit-scrollbar-track {
+		background: #333;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #555;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #222;
+	}
+}
