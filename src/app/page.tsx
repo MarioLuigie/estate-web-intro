@@ -163,7 +163,7 @@ export default function Home() {
 									className="flex-none w-full sm:w-1/1 sm:aspect-auto px-1 h-full"
 								>
 									<div className="h-full">
-										<Card className="w-full h-full bg-zinc-100 p-0 border-0">
+										<Card className="w-full h-full p-0 border-0">
 											<CardContent className="h-full w-full flex items-center justify-center p-2">
 												{/* wrapper z aspect ratio -> Image z fill będzie skalować się responsywnie */}
 												<div className="relative w-full max-w-[360px] aspect-[9/20]">
