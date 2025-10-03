@@ -1,3 +1,4 @@
+'use client'
 import { Volume2 } from 'lucide-react';
 import { SquarePlay } from 'lucide-react';
 
