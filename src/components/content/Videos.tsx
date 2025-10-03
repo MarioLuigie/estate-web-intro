@@ -1,5 +1,3 @@
-import icons from '@/lib/constants/icons';
-import Image from 'next/image';
 import { Volume2 } from 'lucide-react';
 import { SquarePlay } from 'lucide-react';
 
