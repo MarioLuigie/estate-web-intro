@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Footer() {
 	return (
-		<footer className="relative w-full mt-0">
+		<footer className="relative w-full mt-2">
 			{/* gradientowa linia */}
 			<div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-myZinc2 to-transparent opacity-60" />
 
