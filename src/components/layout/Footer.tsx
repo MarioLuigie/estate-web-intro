@@ -17,7 +17,7 @@ export default function Footer() {
 						<h3 className="text-lg font-semibold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
 							Real Estate Mobile App
 						</h3>
-						<p className="text-sm text-muted-foreground leading-relaxed max-w-[360px]">
+						<p className="text-sm text-muted-foreground leading-relaxed">
 							An interactive documentation and concept presentation of a
 							real estate mobile platform.
 						</p>
