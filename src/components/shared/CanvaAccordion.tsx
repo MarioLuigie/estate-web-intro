@@ -27,7 +27,7 @@ export default function CanvaAccordion({
 					key={i.title}
 					className="border-b-myZinc2"
 				>
-					<AccordionTrigger className="font-semibold xs:text-sm sm:text-base py-3 bg-myZinc px-4 text-myZinc3">
+					<AccordionTrigger className="font-semibold xs:text-sm sm:text-base py-3 bg-myZinc px-4 text-myZinc3 cursor-pointer">
 						{i.title}
 					</AccordionTrigger>
 					<AccordionContent className="flex flex-col gap-4 items-center">
