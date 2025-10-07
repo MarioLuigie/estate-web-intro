@@ -21,14 +21,8 @@ export default function CanvaEmbededItem({ src }: { src: string }) {
 		>
 			{!loaded && (
 				<div className="flex flex-col justify-center items-center h-full w-full">
-					{/* <Skeleton className="h-[125px] w-[75%] rounded-xl bg-myZinc2" />
-					<div className="space-y-2 mt-2 w-[75%]">
-						<Skeleton className="h-4 w-full bg-myZinc2" />
-						<Skeleton className="h-4 w-[75%] bg-myZinc2" />
-					</div> */}
-
 					<div className="flex flex-wrap justify-center gap-2">
-						{/* Wiersz 1 - 3 prostokąty */}
+						{/* row 1 - 3 rects */}
 						{[1, 2, 3].map((_, idx) => (
 							<div
 								key={`row1-${idx}`}
@@ -38,14 +32,14 @@ export default function CanvaEmbededItem({ src }: { src: string }) {
 							</div>
 						))}
 
-						{/* Wiersz 2 - 1 prostokąt na środku */}
+						{/* row 2 - 1 rec in the middle */}
 						<div className="flex justify-center w-full mt-4">
 							<div className="flex flex-col items-center w-[30%] min-w-[100px]">
 								<Skeleton className="h-[25%] min-h-[20px] max-h-[70px] w-full rounded-xl bg-myZinc2" />
 							</div>
 						</div>
 
-						{/* Wiersz 3 - 3 prostokąty */}
+						{/* row 3 - 3 rects */}
 						{[1, 2, 3].map((_, idx) => (
 							<div
 								key={`row3-${idx}`}

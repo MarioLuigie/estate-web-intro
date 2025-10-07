@@ -7,15 +7,27 @@ import {
 	AccordionTrigger,
 } from '@/components/ui/accordion';
 import CanvaEmbededItem from './CanvaEmbededItem';
-import { canvaDiagrams } from '@/lib/appFlow';
 
-export default function CanvaAccordion() {
-	const arr = canvaDiagrams.map((i) => i.title);
+type CanvaAccordionProps = {
+	title: string;
+	activeUrl: string;
+}[];
+
+export default function CanvaAccordion({
+	data,
+}: {
+	data: CanvaAccordionProps;
+}) {
+	const arr = data.map((i) => i.title);
 	return (
 		<Accordion type="multiple" className="w-full" defaultValue={arr}>
-			{canvaDiagrams.map((i) => (
-				<AccordionItem value={i.title} key={i.title} className='border-b-myZinc2'>
-					<AccordionTrigger className="font-semibold xs:text-sm sm:text-base py-3 bg-myZinc px-4">
+			{data.map((i) => (
+				<AccordionItem
+					value={i.title}
+					key={i.title}
+					className="border-b-myZinc2"
+				>
+					<AccordionTrigger className="font-semibold xs:text-sm sm:text-base py-3 bg-myZinc px-4 text-myZinc3">
 						{i.title}
 					</AccordionTrigger>
 					<AccordionContent className="flex flex-col gap-4 items-center">
