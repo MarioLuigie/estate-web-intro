@@ -3,11 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --myZinc: #f3f3f3;
+  --myZinc2: #bebebe;
+  --myZinc3: #7a7a7a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-myZinc: var(--myZinc);
+  --color-myZinc2: var(--myZinc2);
+  --color-myZinc3: var(--myZinc3);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +22,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --myZinc: #747474;
+    --myZinc2: #303030;
+    --myZinc3: #dadada;
   }
 }
 
@@ -45,4 +54,8 @@ body {
 	::-webkit-scrollbar-thumb:hover {
 		background: #222;
 	}
+}
+
+@theme {
+  --breakpoint-xs: 400px;
 }
