@@ -21,7 +21,7 @@ export default function Header({
 			<div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-end justify-between px-4 md:px-10 gap-4">
 				<Link href={'/'}>
 					<div>
-						<h1 className="text-center md:text-left text-2xl lg:text-3xl font-bold">
+						<h1 className="text-center md:text-left text-3xl lg:text-3xl font-bold">
 							Estate
 						</h1>
 						<p className="text-center md:text-left md:text-sm text-md font-normal">
