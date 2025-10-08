@@ -2,7 +2,7 @@ import Videos from '@/components/content/Videos';
 import videos from '@/lib/constants/videos';
 import AboutApp from '@/components/content/AboutApp';
 import Image from 'next/image';
-import { onboardImage } from '@/lib/images';
+import { onboardImage, logasImage } from '@/lib/images';
 
 export default function HomePage() {
 	return (
@@ -17,10 +17,21 @@ export default function HomePage() {
 				{/* Speech column */}
 				<AboutApp />
 			</div>
-			<div className="mb-6">
+			<div className="mb-4">
 				<Image
 					src={onboardImage.path}
 					alt={onboardImage.name}
+					width={1920}
+					height={800}
+					className="rounded-2xl"
+				/>
+			</div>
+
+			<div className="mb-6 mt-12 max-w-[700px]">
+				<h2 className='text-black text-3xl font-regular text-center'>Used Technologies</h2>
+				<Image
+					src={logasImage.path}
+					alt={logasImage.name}
 					width={1920}
 					height={800}
 					className="rounded-2xl"

@@ -49,3 +49,8 @@ export const onboardImage = {
 	name: 'on board image',
 	path: '/images/git-hub-board.png'
 }
+
+export const logasImage = {
+	name: 'Logas',
+	path: '/images/loga.png'
+}
