@@ -37,7 +37,7 @@ export default function Header({
 							<Button
 								key={item.path}
 								className={`cursor-pointer text-md hover:text-zinc-500 px-2 ${
-									isActive ? 'bg-white text-zinc-400 font-semibold' : ''
+									isActive ? 'bg-white text-black font-bold' : ''
 								}`}
 								variant="default"
 								onClick={() => router.push(item.path)}

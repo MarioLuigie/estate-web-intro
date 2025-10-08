@@ -14,7 +14,7 @@ export default function Footer() {
 				<div className="max-w-6xl mx-auto px-4 md:px-10 py-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left">
 					{/* Sekcja 1 — opis projektu */}
 					<div>
-						<h3 className="text-lg font-semibold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+						<h3 className="text-lg md:text-xl font-semibold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
 							Real Estate Mobile App
 						</h3>
 						<p className="text-sm text-muted-foreground leading-relaxed">
