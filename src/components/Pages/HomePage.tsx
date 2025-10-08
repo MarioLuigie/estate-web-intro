@@ -10,7 +10,7 @@ export default function HomePage() {
 			{/* Main grid */}
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-8 items-start justify-items-center w-full max-w-6xl mb-8">
 				{/* Video column */}
-				<div className="flex justify-center w-full md:w-auto order-1 md:order-2">
+				<div className="flex justify-center w-full md:w-auto order-1 md:order-2 mt-0 md:mt-16">
 					<Videos src={videos.estate_video} />
 				</div>
 

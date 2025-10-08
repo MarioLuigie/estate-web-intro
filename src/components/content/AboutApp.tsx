@@ -45,7 +45,7 @@ export default function AboutApp() {
 						System Architecture & Technical Highlights.
 					</Link>
 				</div>
-				<Avatar className="size-12">
+				<Avatar className="size-10">
 					<AvatarImage src={images.avatar} />
 					<AvatarFallback>M</AvatarFallback>
 				</Avatar>
@@ -61,17 +61,17 @@ export default function AboutApp() {
 					self: 'start',
 				},
 				{
-					text: 'I designed with a modular C4-inspired architecture — all business logic is injected via a custom DI Graph instead of direct imports. Zero tight coupling.',
+					text: 'I designed with a modular C4-inspired architecture - all business logic is injected via a custom DI Graph instead of direct imports. Zero tight coupling.',
 					dir: 'right',
 					self: 'end',
 				},
 				{
-					text: 'Actions follow Repository Pattern – abstracting Appwrite SDK into reusable services. UI never touches backend logic directly.',
+					text: 'Actions follow Repository Pattern - abstracting Appwrite SDK into reusable services. UI never touches backend logic directly.',
 					dir: 'left',
 					self: 'start',
 				},
 				{
-					text: 'Sensitive logic moved from client to Appwrite Functions – PayPal transactions and data validation now handled securely on server side.',
+					text: 'Sensitive logic moved from client to Appwrite Functions - PayPal transactions and data validation now handled securely on server side.',
 					dir: 'right',
 					self: 'end',
 				},
@@ -81,12 +81,12 @@ export default function AboutApp() {
 					self: 'start',
 				},
 				{
-					text: 'Implemented custom FetchLogger middleware – tracing requests, measuring latency and handling retries for unstable connections.',
+					text: 'Implemented custom FetchLogger middleware - tracing requests, measuring latency and handling retries for unstable connections.',
 					dir: 'right',
 					self: 'end',
 				},
 				{
-					text: 'Utilities, validators and constants organized as Cross-Cutting Layer – pure functions, framework-agnostic and fully testable.',
+					text: 'Utilities, validators and constants organized as Cross-Cutting Layer - pure functions, framework-agnostic and fully testable.',
 					dir: 'right',
 					self: 'start',
 				},
