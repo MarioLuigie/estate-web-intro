@@ -29,7 +29,7 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className={`relative bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 shadow-xl rounded-2xl px-4 py-2 max-w-xs ${className}`}
+      className={`border-t-[1px] border-zinc-200 relative bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 shadow-xl rounded-2xl px-4 py-2 max-w-xs ${className}`}
     >
       {text}
 

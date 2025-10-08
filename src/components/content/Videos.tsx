@@ -22,7 +22,7 @@ export default function Videos({ src }: { src: string }) {
 		<section className="max-w-[360px]">
 			{/* Title */}
 			<div className="flex flex-row items-start justify-center px-10 gap-2">
-				<p className="text-zinc-600 font-normal text-center text-lg">
+				<p className="text-black font-normal text-center text-xl">
 					Video Presentation
 				</p>
 				<Volume2 color="#525252" />
@@ -33,7 +33,7 @@ export default function Videos({ src }: { src: string }) {
 				variants={videosVariants}
 				initial="hidden"
 				animate="show"
-				className="w-full my-6 aspect-[9/16] mx-auto border border-gray-200 rounded-2xl overflow-hidden shadow-xl"
+				className="w-full mb-6 mt-3 aspect-[9/16] mx-auto border border-gray-200 rounded-2xl overflow-hidden shadow-xl"
 			>
 				<video
 					controls
