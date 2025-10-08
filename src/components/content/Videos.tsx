@@ -14,7 +14,7 @@ export default function Videos({ src }: { src: string }) {
 				<SquarePlay color="#525252" />
 			</div>
 			{/* Video */}
-			<div className="w-full my-6 aspect-[9/16] mx-auto border border-gray-200 rounded-2xl overflow-hidden shadow-md">
+			<div className="w-full my-6 aspect-[9/16] mx-auto border border-gray-200 rounded-2xl overflow-hidden shadow-xl">
 				<video
 					controls
 					controlsList="nodownload"

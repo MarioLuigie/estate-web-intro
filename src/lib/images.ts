@@ -44,3 +44,8 @@ export const screens = [
 	{ name: '43', path: '/screens/43.jpg' },
 	{ name: '44', path: '/screens/44.jpg' },
 ];
+
+export const onboardImage = {
+	name: 'on board image',
+	path: '/images/git-hub-board.png'
+}

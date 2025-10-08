@@ -3,7 +3,7 @@ import SpeechBubble from '@/components/shared/SpeechBubble';
 export default function AboutApp() {
 	return (
 		<div className="flex flex-col items-start pb-6 px-3 md:items-end gap-5 w-full md:w-full order-2 md:order-1">
-			<div>
+			<div className='w-full'>
 				<p className="text-zinc-600 font-normal text-left text-lg">
 					System Architecture & Technical Highlights Security.
 				</p>

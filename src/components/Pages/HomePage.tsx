@@ -1,12 +1,14 @@
 import Videos from '@/components/content/Videos';
 import videos from '@/lib/constants/videos';
 import AboutApp from '@/components/content/AboutApp';
+import Image from 'next/image';
+import { onboardImage } from '@/lib/images';
 
 export default function HomePage() {
 	return (
-		<div className="flex items-start justify-center my-7 w-full">
+		<div className="flex flex-col items-center justify-start my-7 w-full">
 			{/* Main grid */}
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-8 items-start justify-items-center w-full max-w-6xl">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-8 items-start justify-items-center w-full max-w-6xl mb-8">
 				{/* Video column */}
 				<div className="flex justify-center w-full md:w-auto order-1 md:order-2">
 					<Videos src={videos.estate_video} />
@@ -14,6 +16,15 @@ export default function HomePage() {
 
 				{/* Speech column */}
 				<AboutApp />
+			</div>
+			<div className="mb-6">
+				<Image
+					src={onboardImage.path}
+					alt={onboardImage.name}
+					width={1920}
+					height={800}
+					className="rounded-2xl"
+				/>
 			</div>
 		</div>
 	);
