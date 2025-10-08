@@ -21,7 +21,7 @@ export default function CanvaEmbededItem({ src }: { src: string }) {
 		>
 			{!loaded && (
 				<div className="flex flex-col justify-center items-center h-full w-full">
-					<p className="text-xl text-myZinc2 mb-4">Loading...</p>
+					<p className="text-xl text-myZinc2 mb-4">Loading Canva...</p>
 					<div className="flex flex-wrap justify-center gap-2">
 						{/* row 1 - 3 rects */}
 						{[1, 2, 3].map((_, idx) => (
