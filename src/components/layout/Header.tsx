@@ -24,7 +24,7 @@ export default function Header({ classes }: { classes?: string }) {
 			)}
 		>
 			<div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-end md:justify-between px-4 md:px-10 gap-4">
-				<div className="flex items-center justify-start gap-4 w-full bg-red-300">
+				<div className="flex items-center justify-start gap-4 w-full">
 					<Logo isAppName={false} />
 					<Link href={ROUTES.home}>
 						<div>
