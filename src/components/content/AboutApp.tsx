@@ -42,7 +42,7 @@ export default function AboutApp() {
 						How I built It?
 					</p>
 					<Link href={'/app-flow'} className="text-zinc-600">
-						System Architecture & Technical Highlights.
+						System Architecture and Technical Highlights.
 					</Link>
 				</div>
 				<Avatar className="size-10">
