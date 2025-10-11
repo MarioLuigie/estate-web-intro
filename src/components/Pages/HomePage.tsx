@@ -18,7 +18,7 @@ export default function HomePage() {
 				{/* Speech column */}
 				<AboutApp />
 			</div>
-			<div className="mb-4 shadow-xl rounded-2xl">
+			<div className="mb-0 sm:mb-4 shadow-xl rounded-2xl mx-2 sm:mx-4">
 				<Image
 					src={onboardImage.path}
 					alt={onboardImage.name}
@@ -28,8 +28,8 @@ export default function HomePage() {
 				/>
 			</div>
 
-			<div className="mb-6 mt-24 max-w-[700px]">
-				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-8">
+			<div className="mb-0 md:mb-4 mt-10 md:mt-18 max-w-[700px]">
+				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-2 sm:mb-4">
 					Used Technologies
 				</h2>
 				<Image
@@ -41,8 +41,8 @@ export default function HomePage() {
 				/>
 			</div>
 
-			<div className="mb-6 mt-24 max-w-[700px]">
-				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-8">
+			<div className="mb-0 md:mb-4 mt-10 md:mt-18 max-w-[700px]">
+				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-0">
 					API Integrations
 				</h2>
 				<div className="flex gap-4 items-center justify-center w-full">

@@ -57,5 +57,6 @@ body {
 }
 
 @theme {
+  --breakpoint-xxs: 320px;
   --breakpoint-xs: 400px;
 }

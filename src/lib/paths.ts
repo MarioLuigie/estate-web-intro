@@ -8,3 +8,7 @@ export const canvaUrls = {
 	c4_url:
 		'https://www.canva.com/design/DAG1MKPNBvI/8ozEQvitgHIX7ZPYILluug/view?embed',
 };
+
+export const ROUTES = {
+	home: '/',
+}
