@@ -1,21 +1,11 @@
 'use client';
-import { useRouter, usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Logo from '@/components/shared/Logo';
 import { ROUTES } from '@/lib/paths';
+import Menu from '@/components/content/Menu';
 
 export default function Header({ classes }: { classes?: string }) {
-	const router = useRouter();
-	const pathname = usePathname(); // hook do aktualnej ścieżki
-
-	const menuItems = [
-		{ label: 'Home', path: '/' },
-		{ label: 'Screens', path: '/screens' },
-		{ label: 'System Architecture', path: '/app-flow' },
-	];
-
 	return (
 		<header
 			className={cn(
@@ -41,24 +31,7 @@ export default function Header({ classes }: { classes?: string }) {
 						</div>
 					</Link>
 				</div>
-
-				<div className="flex flex-col xxs:flex-row xxs:gap-2">
-					{menuItems.map((item) => {
-						const isActive = pathname === item.path;
-						return (
-							<Button
-								key={item.path}
-								className={`cursor-pointer text-md hover:text-zinc-500 px-2 ${
-									isActive ? 'bg-white text-black font-bold' : ''
-								}`}
-								variant="default"
-								onClick={() => router.push(item.path)}
-							>
-								{item.label}
-							</Button>
-						);
-					})}
-				</div>
+				<Menu />
 			</div>
 		</header>
 	);

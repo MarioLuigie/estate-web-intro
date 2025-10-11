@@ -11,4 +11,5 @@ export const canvaUrls = {
 
 export const ROUTES = {
 	home: '/',
+	appFlow: '/app-flow',
 }

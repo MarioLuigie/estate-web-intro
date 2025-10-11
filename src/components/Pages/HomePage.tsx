@@ -4,10 +4,13 @@ import AboutApp from '@/components/content/AboutApp';
 import Image from 'next/image';
 import { onboardImage, logasImage } from '@/lib/images';
 import icons from '@/lib/constants/icons';
+import Link from 'next/link';
+import { ROUTES } from '@/lib/paths';
+import RedirectToAppFlow from '../content/RedirectToAppFlow';
 
 export default function HomePage() {
 	return (
-		<div className="flex flex-col items-center justify-start my-7 w-full">
+		<div className="flex flex-col items-center justify-start mb-7 mt-10 w-full">
 			{/* Main grid */}
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-8 items-start justify-items-center w-full max-w-6xl mb-8">
 				{/* Video column */}
@@ -18,18 +21,24 @@ export default function HomePage() {
 				{/* Speech column */}
 				<AboutApp />
 			</div>
-			<div className="mb-0 sm:mb-4 shadow-xl rounded-2xl mx-2 sm:mx-4">
-				<Image
-					src={onboardImage.path}
-					alt={onboardImage.name}
-					width={1920}
-					height={800}
-					className="rounded-2xl"
-				/>
+			<div>
+				<Link href={ROUTES.appFlow}>
+					<div className="mb-0 sm:mb-4 shadow-xl rounded-2xl mx-2 sm:mx-4">
+						<Image
+							src={onboardImage.path}
+							alt={onboardImage.name}
+							width={1920}
+							height={800}
+							className="rounded-2xl"
+						/>
+					</div>
+				</Link>
+
+				<RedirectToAppFlow />
 			</div>
 
 			<div className="mb-0 md:mb-4 mt-10 md:mt-18 max-w-[700px]">
-				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-2 sm:mb-4">
+				<h2 className="text-black text-xl md:text-3xl font-regular text-center mb-2 sm:mb-4">
 					Used Technologies
 				</h2>
 				<Image
@@ -42,7 +51,7 @@ export default function HomePage() {
 			</div>
 
 			<div className="mb-0 md:mb-4 mt-10 md:mt-18 max-w-[700px]">
-				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-0">
+				<h2 className="text-black text-xl md:text-3xl font-regular text-center mb-0">
 					API Integrations
 				</h2>
 				<div className="flex gap-4 items-center justify-center w-full">

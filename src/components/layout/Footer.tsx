@@ -25,7 +25,7 @@ export default function Footer() {
 
 					<div>
 						{/* Sekcja 2 — linki społecznościowe */}
-						<div className="flex flex-col items-center md:items-start mb-3">
+						<div className="flex flex-col items-center md:items-end mb-3">
 							<h3 className="text-lg font-semibold mb-0">Connect</h3>
 							<div className="flex gap-6">
 								<Link
@@ -56,7 +56,7 @@ export default function Footer() {
 						</div>
 
 						{/* Sekcja 3 — kontakt */}
-						<div className="flex flex-col items-center md:items-start">
+						<div className="flex flex-col items-center md:items-end">
 							<h3 className="text-lg font-semibold mb-0">Contact</h3>
 							<a
 								href="mailto:mk.lotocki@gmail.com"
