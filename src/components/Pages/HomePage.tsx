@@ -3,6 +3,7 @@ import videos from '@/lib/constants/videos';
 import AboutApp from '@/components/content/AboutApp';
 import Image from 'next/image';
 import { onboardImage, logasImage } from '@/lib/images';
+import icons from '@/lib/constants/icons';
 
 export default function HomePage() {
 	return (
@@ -17,7 +18,7 @@ export default function HomePage() {
 				{/* Speech column */}
 				<AboutApp />
 			</div>
-			<div className="mb-4">
+			<div className="mb-4 shadow-xl rounded-2xl">
 				<Image
 					src={onboardImage.path}
 					alt={onboardImage.name}
@@ -27,8 +28,10 @@ export default function HomePage() {
 				/>
 			</div>
 
-			<div className="mb-6 mt-12 max-w-[700px]">
-				<h2 className='text-black text-3xl font-regular text-center'>Used Technologies</h2>
+			<div className="mb-6 mt-24 max-w-[700px]">
+				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-8">
+					Used Technologies
+				</h2>
 				<Image
 					src={logasImage.path}
 					alt={logasImage.name}
@@ -36,6 +39,32 @@ export default function HomePage() {
 					height={800}
 					className="rounded-2xl"
 				/>
+			</div>
+
+			<div className="mb-6 mt-24 max-w-[700px]">
+				<h2 className="text-black text-xl md:text-2xl font-regular text-center mb-8">
+					API Integrations
+				</h2>
+				<div className="flex gap-4 items-center justify-center w-full">
+					<div className="flex-1 max-w-[200px]">
+						<Image
+							src={icons.paypal}
+							alt="PayPal"
+							width={600}
+							height={600}
+							className="w-full h-auto rounded-2xl"
+						/>
+					</div>
+					<div className="flex-1 max-w-[200px]">
+						<Image
+							src={icons.googleMaps}
+							alt="Google Maps"
+							width={600}
+							height={600}
+							className="w-full h-auto rounded-2xl"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
